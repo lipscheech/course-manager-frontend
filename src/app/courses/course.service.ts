@@ -12,7 +12,7 @@ export class CourseService {
     private http: HttpClient
   ) { }
 
-  private coursesUrl: string = 'http://localhost:3100/api/courses';
+  private coursesUrl: string = 'https://git.heroku.com/course-manager-lipscheech.git';
 
   retrieveAll(): Observable<Course[]> {
     return this.http.get<Course[]>(this.coursesUrl);
